@@ -58,7 +58,7 @@ func WASessionInit(jid string, timeout int) error {
 		if err != nil {
 			return err
 		}
-		conn.SetClientName("Go WhatsApp REST", "Go WhatsApp")
+		conn.SetClientName("WhatsApp Api", "By Osama")
 
 		info, err := WASyncVersion(conn)
 		if err != nil {
