@@ -50,7 +50,7 @@ func (s *Server) Start() {
 	LogPrintln(LogLevelInfo, "http-server", "server master started at PID "+strconv.Itoa(os.Getpid()))
 	go func() {
 		LogPrintln(LogLevelInfo, "http-server", "server worker started at PID "+strconv.Itoa(os.Getpid())+" listening on "+net.JoinHostPort(serverCfg.IP, serverCfg.Port))
-		s.srv.ListenAndServe(":"+port, nil)
+		s.srv.ListenAndServe(":"+serverCfg.Port, nil)
 
 		s.wg.Done()
 	}()
