@@ -30,7 +30,7 @@ func NewServer(handler http.Handler) *Server {
 	// Initialize New Server
 	return &Server{
 		srv: &http.Server{
-			Addr:    net.JoinHostPort(serverCfg.IP, os.Getenv("PORT")),
+			Addr:    net.JoinHostPort(serverCfg.IP, serverCfg.Port),
 			Handler: handler,
 		},
 	}
