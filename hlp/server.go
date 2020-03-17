@@ -30,7 +30,7 @@ func NewServer(handler http.Handler) *Server {
 	// Initialize New Server
 	return &Server{
 		srv: &http.Server{
-			Addr:    net.JoinHostPort(serverCfg.IP, serverCfg.Port),
+			Addr:    net.JoinHostPort(serverCfg.IP, os.Getenv("PORT")),
 			Handler: handler,
 		},
 	}
@@ -49,7 +49,7 @@ func (s *Server) Start() {
 	// Start The Server
 	LogPrintln(LogLevelInfo, "http-server", "server master started at PID "+strconv.Itoa(os.Getpid()))
 	go func() {
-		LogPrintln(LogLevelInfo, "http-server", "server worker started at PID "+strconv.Itoa(os.Getpid())+" listening on "+net.JoinHostPort(serverCfg.IP, serverCfg.Port))
+		LogPrintln(LogLevelInfo, "http-server", "server worker started at PID "+strconv.Itoa(os.Getpid())+" listening on "+net.JoinHostPort(serverCfg.IP, os.Getenv("PORT")))
 		s.srv.ListenAndServe()
 
 		s.wg.Done()
