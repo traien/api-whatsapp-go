@@ -1,6 +1,6 @@
 ## Server Configuration
 SERVER_NAME: "go-whatsapp-rest"
-SERVER_IP: ":"
+SERVER_IP: ""
 SERVER_PORT: "8000"
 SERVER_STORE_PATH: "./share/store"
 SERVER_UPLOAD_PATH: "./share/upload"
