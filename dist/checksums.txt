@@ -1,0 +1,6 @@
+8ac0ecd03c27329b50a5b0862472a7436cdcc30b503fe410a365700f84b7401a  go-whatsapp-rest_0.0.0_d00532c_macos_64-bit.zip
+fc6734a5a3faabcb52281cfbf9d89a454418923261143c31fdee25c0d2156c9a  go-whatsapp-rest_0.0.0_d00532c_windows_32-bit.zip
+512124fe1ff269424b24aece8d440359c255d1edb9b9709004cbca09288b77f7  go-whatsapp-rest_0.0.0_d00532c_macos_32-bit.zip
+685896691fb767d5f7351a45b29d508cdd5e9e8b1bd5680ff79b637765ee3ba9  go-whatsapp-rest_0.0.0_d00532c_windows_64-bit.zip
+37975eda0e6187b9704b98cfd46226877a29a95d82d78484bea458d3ccd718bb  go-whatsapp-rest_0.0.0_d00532c_linux_64-bit.zip
+f7cd9cee9e77fa54ee0230f50e4cf2918017188cafcc1360d429febac23fad46  go-whatsapp-rest_0.0.0_d00532c_linux_32-bit.zip
